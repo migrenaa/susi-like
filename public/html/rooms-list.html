@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GetRooms</title>
+	<link rel="stylesheet" type="text/css" href="../assets/rooms-list.css">
+	<link rel="stylesheet" type="text/css" href="../assets/list.css">
+	<link rel="stylesheet" type="text/css" href="../assets/tabs.css">
+</head>
+
+<body>
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'London')">London</button>
+		<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+		<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+	</div>
+
+	<!-- Tab content -->
+	<div id="London" class="tabcontent">
+		<h3>London</h3>
+		<p>London is the capital city of England.</p>
+	</div>
+
+	<div id="Paris" class="tabcontent">
+		<h3>Paris</h3>
+		<p>Paris is the capital of France.</p>
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+		<h3>Tokyo</h3>
+		<p>Tokyo is the capital of Japan.</p>
+	</div>
+	<div class="labels">
+		<div class='label' id='room-label'>
+			<p>Building</p>
+		</div>
+		<div class='label' id='room-label'>
+			<p>Room Number</p>
+		</div>
+		<div class='label' id='room-label'>
+			<p>Floor</p>
+		</div>
+	</div>
+
+	<div id='room-container'>
+		<div class='room'>
+		</div>
+	</div>
+
+	<script src="../js/rooms.js"></script>
+	<script src="../js/tabs.js"></script>
+</body>
+
+</html>

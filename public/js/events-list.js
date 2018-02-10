@@ -8,15 +8,28 @@ get('/events')
     response.forEach(element => {
         console.log(element.room);
         const eventDiv = `
-        <div class='Event'>
-                    <p id='name' style="display:inline;">${element.name}</p>
-                    <p id='professor' style="display:inline">${element.professor}</p>
-                    <p id='room' style="display:inline">${element.room}</p>
-                    <p id='start_time'style="display:inline">${element.start_time}</p>
-                    <p id='end_time' style="display:inline">${element.end_time}</p>
-                    <p id='course'style="display:inline">${element.course}</p>
-                    <p id='description' style="display:inline">${element.description}</p>
-				<HR>
+        <div class='labels'>
+        <div class='label'>
+            <p>${element.name}</p>
+        </div>
+        <div class='label'>
+            <p>${element.professor}</p>
+        </div>
+        <div class='label'>
+            <p>${element.room}</p>
+        </div>
+        <div class='label'>
+            <p>${element.start_time}</p>
+        </div>
+        <div class='label'>
+            <p>${element.end_time}</p>
+        </div>
+        <div class='label'>
+            <p>${element.course}</p>
+        </div>
+        <div class='label'>
+            <p>${element.description}</p>
+        </div>
         </div>`
         const container = document.getElementById('event-container');
         const newDiv = document.createElement('div');

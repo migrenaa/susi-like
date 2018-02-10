@@ -2,8 +2,8 @@
 const Login = document.querySelector('.Login')
 Login.addEventListener('submit', (e) => {
   e.preventDefault();
-  const username = Login.querySelector('.username').value;
-  const password = Login.querySelector('.password').value;
+  const username = Login.querySelector('#username').value;
+  const password = Login.querySelector('#password').value;
   post('/login', { username, password })
     .then(function (res) {
       if (res.status == 400)
@@ -14,13 +14,15 @@ Login.addEventListener('submit', (e) => {
       console.log(response);
       switch (response.role) {
         case ('professor'):
-          window.location.assign('/createEvent.html');
+        console.log('professor')
+          window.location.assign('../html/create-event.html');
           break;
         case ('student'):
-          window.location.assign('/events-list.html');
+        console.log('redirect to event-list')
+          window.location.assign('../html/event-list.html');
           break;
         case ('admin'):
-          window.location.assign('/createUsers.html');
+          window.location.assign('../html/createUsers.html');
           break;
       }
     });

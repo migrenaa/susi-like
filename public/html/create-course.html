@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create course</title>
+  <link rel="stylesheet" type="text/css" href="../assets/create-form.css">
+  <link rel="stylesheet" type="text/css" href="../assets/tabs.css">
+</head>
+
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+    
+      <!-- Tab content -->
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+    
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+    
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+  <div id="course">
+    <h2>Create a course </h2>
+    <form class="course-form">
+      <input type="text" class="name" placeholder="name">
+      <input type="text" class="professor" placeholder="professor name">
+      <input type="text" class="room" placeholder="room">
+      <input type="text" class="start_time" placeholder="start time">
+      <input type="text" class="end_time" placeholder="end time">
+      <input type="text" class="department" placeholder="department">
+      <input type="text" class="category" placeholder="category">
+      <input type="submit" value="Create">
+    </form>
+  </div>
+
+  <div id="rooms">
+    <form class="CreateRoom">
+      <h2>Create a room</h2>
+      <input type="text" class="building" placeholder="building">
+      <input type="text" class="number" placeholder="number">
+      <input type="text" class="floor" placeholder="floor">
+      <input type="submit" value="Create">
+    </form>
+  </div>
+  <script src="../js/app.js"></script>
+  <script src="../js/tabs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.labels {
+	margin-top: 10px;
+	overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.label { 
+    top:10px;
+    width:14%;
+	background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+#event-container{
+	width: 100%;
+}
+
+#room-label{
+    width: 30% !important;
+}
+

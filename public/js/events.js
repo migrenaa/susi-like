@@ -17,7 +17,7 @@ CreateEvent.addEventListener('submit', (e) => {
 const ListEvents = document.querySelector('.all-events-button')
 ListEvents.addEventListener('click', (e) => {
   e.preventDefault();
-  window.location.assign('/events-list.html');
+  window.location.assign('../html/events-list.html');
 });
 
 function post (path, data) {

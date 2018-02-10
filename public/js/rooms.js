@@ -6,10 +6,16 @@ get('/rooms')
     .then(function (response) {
         response.forEach(element => {
             const roomDiv = `
-            <div class='Room'>
-                <p id='building' style="display:inline;">${element.building}</p>
-                <p id='number' style="display:inline;">${element.number}</p>
-                <p id='floor' style="display:inline;">${element.floor}</p>
+            <div class='room-container'>
+            <div class='label' id='room-label'>
+                <p>${element.building}</p>
+			</div>
+            <div class='label' id='room-label'>
+                <p>${element.number}</p>
+			</div>
+            <div class='label' id='room-label'>
+                <p>${element.floor}</p>
+            </div>
             </div>`
             const container = document.getElementById('room-container');
             const newDiv = document.createElement('div');
