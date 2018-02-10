@@ -1,0 +1,66 @@
+article, aside, details, figcaption, figure, 
+footer, header, menu, nav, section {
+	display: block;
+}
+
+html, body{ 
+	
+	height: 100%; 	
+}
+
+body{
+	background-color:#e8acb4;
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#e8acb4, endColorstr=#6fb7d9);
+	background-image:-moz-linear-gradient(right top, #e8acb4 0%, #6fb7d9 70%,#bd7abf 0%);
+	background-image:linear-gradient(right top, #e8acb4 0%, #6fb7d9 70%,#bd7abf 0%);
+	background-image:-webkit-linear-gradient(right top, #e8acb4 0%, #6fb7d9 70%,#bd7abf 0%);
+	background-image:-o-linear-gradient(right top, #e8acb4 0%, #6fb7d9 70%,#bd7abf 0%);
+	background-image:-ms-linear-gradient(right top, #e8acb4 0%, #6fb7d9 70%,#bd7abf 0%);
+	background-image:-webkit-gradient(linear, right top, left bottom, color-stop(0%,#e8acb4), color-stop(70%,#6fb7d9),color-stop(0%,#bd7abf));
+	background-attachment: fixed;
+}
+
+input[type = submit] {
+	background-color: #4169e1;
+}
+
+input[value] {
+	color: white;
+}
+
+h2 {
+	text-align: left;
+	font-family: Didot, serif;
+	font-weight: normal;
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+	width: 350px;
+	position: relative;
+}
+
+
+#course{
+	position: relative;
+	top: 15%;
+	left: 100px;
+	width: 400px;
+}
+
+
+#course h2{
+	position: relative, center; 
+	left: 100px;
+}
+
+#rooms{
+	position: relative;
+	top: -15%;
+	left: 570px;
+	width: 400px;
+}
+
+#rooms h2{
+	position: relative, center; 
+	left: 100px;
+}
+
