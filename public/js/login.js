@@ -12,17 +12,17 @@ Login.addEventListener('submit', (e) => {
     })
     .then(function (response) {
       console.log(response);
+      window.location.assign('../html/event-list.html');
       switch (response.role) {
         case ('professor'):
         console.log('professor')
-          window.location.assign('../html/create-event.html');
           break;
         case ('student'):
         console.log('redirect to event-list')
           window.location.assign('../html/event-list.html');
           break;
         case ('admin'):
-          window.location.assign('../html/createUsers.html');
+          window.location.assign('../html/event-list.html');
           break;
       }
     });

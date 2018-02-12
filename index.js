@@ -139,6 +139,15 @@ app.get('/rooms', (req, res) => {
     .then((rooms) => { res.json(rooms) });
 });
 
+app.get('/courses', (req, res) => {
+  store.getCourses()
+    .then((courses) => { res.json(courses) });
+});
+
+app.get('/students', (req, res) => {
+  store.getStudents()
+    .then((students) => { res.json(students) });
+});
 app.get('/events', (req, res) => {
   store.getEvents()
     .then((events) => {

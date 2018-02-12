@@ -118,5 +118,8 @@ module.exports = {
   },
   getEvents(){
     return knex('events');
+  }, 
+  getStudents(){
+    return knex('students');
   }
 }
